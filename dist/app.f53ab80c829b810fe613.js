@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[0],[function(n,o,c){"use strict";function t(){console.log("APP COMPONENT")}c.r(o),c.d(o,"default",(function(){return t}))}],[[0,1]]]);
