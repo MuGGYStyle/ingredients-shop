@@ -5,16 +5,16 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
   entry: { app: "./src/js/index.js" },
   output: {
-    filename: "[name].[contenthash].js",
-    path: path.resolve(__dirname, "dist")
+    filename: "js/[name].[contenthash].js",
+    path: path.resolve(__dirname, "docs")
   },
   devServer: {
-    contentBase: "./dist"
+    contentBase: "./docs"
   },
   plugins: [
     // new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      filename: "index.[contenthash].html",
+      filename: "index.html",
       template: "src/index.html"
     })
   ],

@@ -1,3 +1,6 @@
-export default function component() {
-  console.log("APP COMPONENT");
-}
+require("@babel/polyfill");
+import Search from "./model/Search";
+
+let search = new Search("pizza");
+
+search.doSearch().then(r => console.log(r));
