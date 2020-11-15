@@ -1,9 +1,9 @@
 import { elements } from "./base";
 
-const renderRecipe = recipe => {
+const renderRecipe = (recipe) => {
   const activeClass = "results__link--active";
   const html = `<li>
-    <a class="results__link" href="#23456">
+    <a class="results__link" href="#${recipe.recipe_id}">
         <figure class="results__fig">
             <img src="${recipe.image_url}" alt="Test">
         </figure>
